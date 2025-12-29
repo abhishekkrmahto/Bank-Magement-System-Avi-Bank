@@ -1,5 +1,9 @@
 package avibank.service;
 
-public class AdminService {
-    
+public interface AdminService {
+    void viewAllAccount();
+
+    void freezeAccount();
+
+    void deleteAccount();
 }

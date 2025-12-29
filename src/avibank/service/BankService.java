@@ -1,5 +1,5 @@
 package avibank.service;
 
-public class BankService {
-    
+public interface BankService {
+    void createAccount();
 }

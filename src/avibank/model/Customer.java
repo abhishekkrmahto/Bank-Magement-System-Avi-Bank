@@ -3,10 +3,11 @@ package avibank.model;
 import java.util.Scanner;
 
 import avibank.exception.InsufficientBalanceException;
+import avibank.service.CustomerService;
 import avibank.util.InputUtil;
 import avibank.welcomeScreen.LoadingScreen;
 
-public class Customer extends User {
+public class Customer extends User implements CustomerService {
 
     Scanner sc = new Scanner(System.in);
     InputUtil input = new InputUtil();
@@ -49,7 +50,7 @@ public class Customer extends User {
     }
 
     // ----------------------FUNCTIONS-----------------------------------
-
+    @Override
     public void deposit(long amount) throws Exception {
         System.out.println("--:CONFIRM:--[Y/y]");
         if (input.confirmation()) {
@@ -64,6 +65,7 @@ public class Customer extends User {
         return;
     }
 
+    @Override
     public void withdraw(long amount) throws Exception {
         System.out.println("--:CONFIRM:--[Y/y]");
         if (input.confirmation()) {
