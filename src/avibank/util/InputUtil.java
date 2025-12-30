@@ -24,4 +24,10 @@ public class InputUtil {
             return false;
         }
     }
+
+    // admin selections
+    public int adminOperartionSelection() {
+        int n = sc.nextInt();
+        return n;
+    }
 }

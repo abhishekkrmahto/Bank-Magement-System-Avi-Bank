@@ -1,6 +1,10 @@
 package avibank.welcomeScreen;
 
+import avibank.util.InputUtil;
+
 public class Welcome {
+    InputUtil input = new InputUtil();
+
     public void welcomeScreen() throws InterruptedException {
         // WELCOME TO AVI BANK SERVICE
         System.out.println("-------------------------------------------------------------------------\n");
