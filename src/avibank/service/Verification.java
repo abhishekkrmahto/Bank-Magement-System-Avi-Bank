@@ -8,13 +8,13 @@ public class Verification {
     Scanner sc = new Scanner(System.in);
     Admin admin = new Admin();
 
-    public void adminVerification() {
+    public boolean adminVerification() {
         System.out.println("Enter Admin Id:- ");
         int enteredId = sc.nextInt();
 
         if (enteredId != admin.getAdminId()) {
             System.out.println("Sorry You are not Admin !!");
-            return;
+            return false;
         }
 
         System.out.print("Enter Admin Pin:- ");
@@ -22,9 +22,10 @@ public class Verification {
 
         if (enteredPin != admin.getAdminPin()) {
             System.out.println("Sorry You are not admin !!");
-            return;
+            return false;
         }
 
-        
+        return true;
+
     }
 }

@@ -7,6 +7,7 @@ public class LoadingScreen {
             System.out.print(". ");
             Thread.sleep(1000);
         }
+        System.out.println();
     }
 
     // 5s
@@ -15,6 +16,7 @@ public class LoadingScreen {
             System.out.print(". ");
             Thread.sleep(1000);
         }
+        System.out.println();
     }
 
 }

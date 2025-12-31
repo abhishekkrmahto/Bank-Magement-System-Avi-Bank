@@ -1,9 +1,9 @@
 package avibank.service;
 
 public interface AdminService {
-    void viewAllAccount();
+    void viewAllAccount() throws Exception;
 
-    void freezeAccount();
+    void freezeAccount() throws Exception;
 
-    void deleteAccount();
+    void deleteAccount() throws Exception;
 }
