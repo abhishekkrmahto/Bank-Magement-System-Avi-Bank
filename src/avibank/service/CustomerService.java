@@ -8,4 +8,5 @@ public interface CustomerService {
     void transfer() throws Exception;
 
     void viewTransactions() throws Exception;
+
 }

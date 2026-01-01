@@ -24,8 +24,6 @@ public class Verification {
             System.out.println("Sorry You are not admin !!");
             return false;
         }
-
         return true;
-
     }
 }
