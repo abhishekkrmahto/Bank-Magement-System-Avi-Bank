@@ -18,10 +18,13 @@ public class AdminServiceImplementation implements AdminService {
     ThankYouMessage message = new ThankYouMessage();
     Welcome welcome = new Welcome();
 
+
+    
+
     @Override
     public void viewAllAccount() throws Exception {
         // show all users from DB
-        System.out.println("Currently working on it");
+        System.out.print("Loading . .");
         loadingScreen.load5s();
         return;
     }
